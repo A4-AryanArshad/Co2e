@@ -1,0 +1,132 @@
+#upperheader{
+    background-image: url("https://www.airdropbikes.com/cdn/shop/articles/1800-Blog-Carbon-Offsetting_1600x.jpg?v=1602672422");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 780px;
+    height: 100vh;
+  width: 100%;
+}
+
+#form{
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-top: 100px;
+padding-bottom: 100px;
+width: 700px;
+border: 3px solid white;
+border-radius: 20px;
+
+
+}
+#uuy{
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#form input{
+    text-align: center;
+    color: white !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    width: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#form input:focus {
+    outline: none;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+#form button{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #90be55;
+    border-radius: 10px;
+    color: white;
+}
+#ineerf span{
+    padding-left: 30px;
+    font-weight: 700;
+
+}
+
+
+@media screen and (max-width: 744px) {
+
+    #form{
+       
+        width: 500px;
+ 
+        
+        
+        }
+        #form input{
+           
+            width: 300px;
+        
+        }
+
+}
+
+@media screen and (max-width: 529px) {
+
+    #form{
+       
+        width: 400px;
+
+        
+        
+        }
+        #form input{
+           
+            width: 300px;
+        
+        }
+
+}
+
+@media screen and (max-width: 427px) {
+
+    #form{
+       
+        width: 300px;
+margin-bottom: 70px;
+        
+        
+        }
+        #upperheader{
+            height: 100%;
+        }
+        #form input{
+           
+            width: 200px;
+        
+        }
+
+}
+
+#uuy form {
+margin-bottom: 200px;
+}
+
+#upperheader{
+    height: 100%;
+}

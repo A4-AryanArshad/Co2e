@@ -1,0 +1,259 @@
+/* Directory Listing Animations and Styling */
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(144, 190, 85, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(144, 190, 85, 0.6);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+        transform: translate3d(0, -8px, 0);
+    }
+    70% {
+        transform: translate3d(0, -4px, 0);
+    }
+    90% {
+        transform: translate3d(0, -2px, 0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+/* Enhanced form styling */
+form {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+form input,
+form select,
+form textarea {
+    transition: all 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #90be55;
+    box-shadow: 0 0 10px rgba(144, 190, 85, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Submit button animations */
+button[type="submit"] {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(144, 190, 85, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: translateY(-1px);
+}
+
+/* Shimmer effect for submit button */
+button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+button[type="submit"]:hover::before {
+    left: 100%;
+}
+
+/* Form container animations */
+div[style*="background: #f9f9f9"] {
+    animation: fadeInLeft 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+div[style*="background: #f9f9f9"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title animations */
+h1 {
+    animation: fadeInUp 1s ease-out;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.02);
+    text-shadow: 0 0 10px rgba(144, 190, 85, 0.3);
+}
+
+/* Error and success message animations */
+div[style*="color: red"],
+div[style*="color: green"] {
+    animation: bounce 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+div[style*="color: red"]:hover,
+div[style*="color: green"]:hover {
+    transform: scale(1.05);
+}
+
+/* Form labels animations */
+label {
+    transition: all 0.3s ease;
+}
+
+label:hover {
+    color: #90be55;
+    transform: translateX(5px);
+}
+
+/* Input group animations */
+div[style*="display: grid"] {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+/* Social links section animations */
+div[style*="display: flex"] {
+    animation: scaleIn 0.6s ease-out;
+}
+
+/* Continuous floating animation for form elements */
+form > div:nth-child(1) { animation-delay: 0.1s; }
+form > div:nth-child(2) { animation-delay: 0.2s; }
+form > div:nth-child(3) { animation-delay: 0.3s; }
+form > div:nth-child(4) { animation-delay: 0.4s; }
+form > div:nth-child(5) { animation-delay: 0.5s; }
+form > div:nth-child(6) { animation-delay: 0.6s; }
+form > div:nth-child(7) { animation-delay: 0.7s; }
+
+/* Responsive animations */
+@media (max-width: 768px) {
+    form {
+        animation: fadeInUp 0.6s ease-out;
+    }
+    
+    div[style*="background: #f9f9f9"] {
+        animation: fadeInUp 0.6s ease-out;
+    }
+    
+    h1 {
+        animation: fadeInUp 0.8s ease-out;
+    }
+}
+
+/* Enhanced hover effects */
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: #f8f9fa;
+}
+
+/* Focus states with glow effect */
+input:focus,
+select:focus,
+textarea:focus {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Loading state animations */
+button[type="submit"]:disabled {
+    animation: none;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Success state animations */
+div[style*="color: green"] {
+    animation: bounce 0.6s ease-out, glow 2s ease-in-out infinite;
+}
+
+/* Error state animations */
+div[style*="color: red"] {
+    animation: bounce 0.6s ease-out, pulse 2s ease-in-out infinite;
+} 

@@ -1,0 +1,412 @@
+{
+  "navbar": {
+    "logo": "C02e PORTAL",
+    "home": "Home",
+    "service": "Service",
+    "trade": "Trade",
+    "pricing": "Pricing",
+    "news": "News",
+    "login": "Login",
+    "resources": "Resources",
+    "submenu": {
+      "why_choose_us": "Why choose us",
+      "what_we_do": "What we do.",
+      "directory_listing": "Directory Listing",
+      "corporate_training_courses": "Corporate Training Courses",
+      "carbon_footprint_assessment": "Carbon Footprint Assessment & Reporting",
+      "edu_ficelle": "Edu Ficelle",
+      "satellite_verified_offset_project_explorer": "Satellite-Verified Offset Project Explorer",
+      "soon": "Soon",
+      "plans": "Plans",
+      "courses": "Courses",
+      "news": "News",
+      "blog": "Blog",
+      "decarbxchange": "DecarbXchange",
+      "carbon_offsetting_guides": "Carbon Offsetting Guides",
+      "tools_resources": "Tools & Resources",
+      "our_partners": "Our Partners",
+      "bcourses": "BCourses",
+      "directory": "Directory",
+      "slots": "Slots",
+      "login": "Login",
+      "contact_us": "Contact us"
+    }
+  },
+  "join_now": "Join Now",
+  "hero": {
+    "subtitle": "Welcome to C02e PORTAL",
+    "title": {
+      "part1": "Driving the Transition to a",
+      "part2": "Net-Zero Economy"
+    },
+    "description": "Navigate the Carbon Landscape, Invest in Green Projects, and Achieve Your Sustainability Goals"
+  },
+  "features": {
+    "safe_shelter": {
+      "title": "Safe Shelter",
+      "text": "Reduces energy use, lowers construction-related carbon emissions."
+    },
+    "safe_water": {
+      "title": "Safe Water",
+      "text": "Conserves energy in purification, limits emissions output."
+    },
+    "ecology_save": {
+      "title": "Ecology Save",
+      "text": "Protects carbon sinks, maintains natural carbon balance."
+    },
+    "environment": {
+      "title": "Environment",
+      "text": "Healthy ecosystems absorb carbon, regulate global climate."
+    }
+  },
+  "about": {
+    "subtitle": "Why Choose Us",
+    "title": {
+      "part1": "Rise Your Hand to Save",
+      "part2": "The World"
+    },
+    "tabs": {
+      "mission": {
+        "title": "Our Mission",
+        "text": "We believe in a future where sustainable practices are at the core of every business and individual action. We are a comprehensive platform dedicated to accelerating the global transition to a low-carbon economy."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "text": "To envision a world where decarbonization is universally adopted, fostering a resilient, net-zero economy where businesses and individuals collaboratively drive sustainable global impact."
+      },
+      "nextPlan": {
+        "title": "Next Plan",
+        "text": "We empower climate action through comprehensive carbon education, a transparent blockchain marketplace for credits, and accessible fractional investments in high-impact green projects, driving a sustainable future."
+      }
+    },
+    "points": [
+      "Empower Climate Action",
+      "Facilitate Carbon Management",
+      "Resilient Net-Zero Economy",
+      "Deliver Expert Education"
+    ],
+    "learn_more": "Learn More Us"
+  },
+  "cta": {
+    "title": "Start exploring now by joining us!",
+    "button": "JOIN NOW"
+  },
+  "services": {
+    "directoryListing": {
+      "title": "Directory Listing",
+      "letters": "A, B, C, D, E, F, G, H, I, J, K, L, …"
+    },
+    "featuredListing": "Featured Listing",
+    "description": "Sustainable Success through Carbon Emissions awareness and Climate impact in your organization...",
+    "courseButton": "Corporative Employee Training Course",
+    "professor": "Professor",
+    "commencing": "Commencing",
+    "trainingSummary": "Our training courses aim to bring awareness...",
+    "cards": [
+      {
+        "title": "Climate Science - Winter/Spring 2024",
+        "desc": "Climate change refers to long-term shifts..."
+      },
+      {
+        "title": "Vision Science - Winter/Spring 2024",
+        "desc": "Study the mechanisms that allow us to visualise the world..."
+      },
+      {
+        "title": "Economics - Winter/Spring 2024",
+        "desc": "You’ll learn the fundamental principles of economics..."
+      },
+      {
+        "title": "Climate Science - Summer/Fall 2024",
+        "desc": "Climate change refers to long-term shifts..."
+      }
+    ],
+    "course1": {
+      "title": "Net Zero Carbon Strategy for Business",
+      "line1": "Net Zero Carbon Strategy",
+      "line2": "Decarbonisation",
+      "line3": "Carbon Accounting | Carbon Footprinting",
+      "line4": "Carbon Reduction | Sustainability"
+    },
+    "course2": {
+      "title": "Winning Strategies in Corporate Sustainability and ESG 2.",
+      "desc": "SDGs integration, ESG and value creation..."
+    },
+    "createdBy": "Created by CO2ePortal.com"
+  },
+  "service": {
+    "subtitle": "What We Do",
+    "heading": {
+      "part1": "We Work Differently to",
+      "part2": "keep The World Safe"
+    },
+    "readMore": "Read More"
+  },
+  "serviceData": [
+    {
+      "title": "Training & Awareness",
+      "text": "Strategic Sustainability Solution Enhance understanding of carbon markets, emissions reduction, and best practices through our comprehensive corporate training programs"
+    },
+    {
+      "title": "Net-Zero & ESG Strategies",
+      "text": "Develop robust net-zero strategies and integrate winning ESG (Environmental, Social, Governance) practices for sustainable business impact."
+    },
+    {
+      "title": "Blockchain Carbon Marketplace",
+      "text": "Trade verified carbon credits securely and transparently on our innovative DecarbXchange P2P blockchain marketplace."
+    },
+    {
+      "title": "Impactful Green Investments",
+      "text": "Access high-impact sustainable projects through fractional investments, contributing to a greener planet while earning returns"
+    }
+  ],"donate": {
+    "items": [
+      {
+        "heading": "Carbon Emissions Awareness Training",
+        "paragraph": "Our corporate training courses significantly enhance understanding of carbon markets, emissions reduction, and best practices. Equip your team to mitigate your carbon footprint."
+      },
+      {
+        "heading": "DecarbXchange P2P Marketplace",
+        "paragraph": "Our blockchain-based P2P marketplace offers a secure and transparent way to trade verified carbon credits, empowering direct climate action for businesses and individuals."
+      },
+      {
+        "heading": "Fractional Investment Hub",
+        "paragraph": "Participate in high-impact sustainable projects through small, manageable investments. Earn potential returns from real-world carbon credit assets while contributing to global sustainability"
+      },
+      {
+        "heading": "Net-Zero Strategy for Business",
+        "paragraph": "We provide the training and resources necessary for businesses to develop and implement robust net-zero carbon strategies, driving your journey towards a sustainable future."
+      }
+    ],
+    "button": "Join Now"
+  },
+  "testimonials": {
+    "subtitle": "Our Commitment",
+    "title": "To a",
+    "strong": "Sustainable World",
+    "paragraph": "We believe in a future where sustainable practices are at the core of every business and individual action. We are a comprehensive platform dedicated to accelerating the global transition to a low-carbon economy. By offering expert training in carbon management, pioneering a transparent blockchain-based carbon credit marketplace, and facilitating high-impact fractional investments in green projects, we empower our clients to understand, reduce, and offset their environmental footprint.",
+    "services": "Services",
+    "our": "Our",
+    "servicesStrong": "Services",
+    "join": "Join",
+    "learnMore": "Learn More Us",
+    "events": [
+      {
+        "day": "01",
+        "title": "Training",
+        "heading": "Carbon Management Training & Education:",
+        "paragraph": "We provide corporate employee training courses to enhance understanding of carbon markets, emissions reduction, and best practices, aiming to bring awareness to climate impact and how to mitigate their carbon footprint."
+      },
+      {
+        "day": "02",
+        "title": "Marketplace",
+        "heading": "DecarbXchange P2P Marketplace:",
+        "paragraph": "Our blockchain-based, peer-to-peer marketplace allows for the secure and transparent trading of verified carbon credits, empowering businesses and individuals to take direct control of their climate action."
+      },
+      {
+        "day": "03",
+        "title": "Investment",
+        "heading": "Fractional Investment Hub:",
+        "paragraph": "We facilitate participation in high-impact sustainable projects through small, manageable investments, enabling users to earn returns from real-world carbon credit assets while contributing to the planet."
+      }
+    ]
+  },
+  "footer": {
+  "subscribe_heading": "Stay Updated! Subscribe to Our Newsletter",
+  "subscribe_placeholder": "Enter your email to receive the latest updates and offers",
+  "subscribe_button": "Subscribe",
+  "portal_name": "CO2e Portal",
+  "copyright": "Copyright@2025 | CO2e Portal",
+  "nav_links": "HOME  |  SERVICE  |  TRADE  |  PRICING  |  NEWS"
+},
+"trading": {
+  "coming_soon": "Coming Soon",
+  "carbon_guides_title": "Carbon Offsetting Guides",
+  "untitled": "Untitled",
+  "no_description": "No description available",
+  "learn_more": "Learn More",
+  "calculator_title": "Calculate your CO2 Emissions",
+  "democratizing_title": "Democratizing Green Investment: A New Paradigm",
+  "democratizing_text": "The urgency of climate action has spurred a global revolution of investment strategies, pushing sustainable finance from a niche to a central priority. Within this transformation, fractional ownership emerges as an innovation that is enabling broader participation beyond institutional giants and the wealthy.",
+  "partners_title": "Partners"
+},
+"plan": {
+  "choose_membership_title": "💼 Choose Your Membership Package",
+  "current": "CURRENT",
+  "free_plan": "Free Plan",
+  "free": "Free",
+  "free_desc": "Perfect for individuals or startups looking to get started",
+  "free_listed_directory": "Listed in the Directory (as plain text)",
+  "free_no_courses": "No access to Courses",
+  "free_no_discounts": "No discounts",
+  "free_no_featured": "No Featured Listing (no image or highlight)",
+  "activating": "Activating...",
+  "start_free": "Start Free",
+  "pro_plan": "Pro Plan",
+  "pro_desc": "Ideal for growing companies seeking more exposure and learning opportunities",
+  "pro_listed_directory": "Listed in the Directory with:",
+  "pro_bold_text": "Bold Text",
+  "pro_color": "Color",
+  "pro_larger_font": "Larger Font",
+  "pro_access_courses": "Access to all Instructor-led Courses",
+  "pro_no_discounts": "No Course Discounts",
+  "pro_no_featured": "No Featured Listing on Homepage",
+  "redirecting": "Redirecting...",
+  "upgrade_now": "Upgrade Now",
+  "premium_plan": "Premium Plan",
+  "premium_desc": "Unlock maximum visibility, exclusive discounts, and full course access",
+  "premium_all_pro_features": "All Pro Plan features plus:",
+  "premium_featured_homepage": "Featured Listing on homepage (company image shown)",
+  "premium_discounts_courses": "Discounts on all Courses",
+  "premium_access_courses": "Access to all Instructor-led Courses",
+  "premium_listed_directory": "Listed in the Directory with:",
+  "go_premium": "Go Premium",
+  "blockchain_title": "Discover Our Secure Blockchain P2P Marketplace",
+  "blockchain_text": "Easily buy and sell verified carbon credits with full transparency. Take control of your climate impact—whether you're a business or an individual.",
+  "investment_hub_title": "Fractional Investment Hub: Invest in Sustainability",
+  "investment_hub_text": "Start investing in real-world sustainable projects with as little as $X. Earn returns and make a positive impact on the planet.",
+  "commitment_title": "Our Commitment: Supporting Verifiable Sustainable Projects",
+  "commitment_text": "We partner only with certified, measurable sustainability initiatives aligned with global climate goals. Every project is thoroughly vetted for impact and transparency.",
+  "membership_perks": "Why Join CO2e Portal? Membership Benefits:",
+  "perk1": "DecarbXchange P2P Marketplace & Fractional Investment Hub @ Pre-Launch discounted Plan.",
+  "perk2": "Verified Carbon Credit listings.",
+  "month": "Month"
+},
+"signup": {
+      "title": "Sign Up",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign Up",
+      "already_have_account": "Already have an account?",
+      "log_in_now": "Log in now"
+    },
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "not_member": "Not a member?",
+      "sign_up_now": "Sign up now",
+      "forgot_password": "Forgot password?",
+      "already_have_account": "Already have an account?",
+      "log_in_now": "Log in now",
+      "forgot_password_title": "Forgot Password",
+      "forgot_password_message": "Enter your email address and we'll send you a link to reset your password.",
+      "reset_password_title": "Reset Your Password",
+      "reset_password_message": "Enter your new password below",
+      "new_password": "New Password",
+      "confirm_password": "Confirm Password",
+      "reset_password": "Reset Password",
+      "resetting_password": "Resetting Password...",
+      "password_reset_success": "Password reset successfully! Redirecting to login...",
+      "password_reset_error": "Failed to reset password. Please try again.",
+      "invalid_reset_link": "Invalid reset link. Please request a new password reset.",
+      "back_to_login": "Back to Login",
+      "reset_email_sent": "If that email exists, a reset link has been sent.",
+      "reset_email_error": "Error sending reset email."
+    },
+    "counter": {
+  "heading": "Real-Time Global Carbon Impact",
+  "since": "Since",
+  "emissions_label": "CO₂ Emissions",
+  "emissions_unit": "Metric tons emitted",
+  "credits_label": "Carbon Credits Issued",
+  "credits_unit": "Metric tons offset"
+},
+"blog": {
+  "subscribePlaceholder": "Enter your email to subscribe to our newsletter",
+  "subscribe": "Subscribe",
+  "start": "Get started with our",
+  "news": "News",
+  "readMore": "Read More"
+},
+"recent": {
+    "seeWhat": "See what we've",
+    "blogs": "Blogs",
+    "readMore": "Read More"
+  },
+  "slots": {
+    "instructor_profile": "Instructor Profile",
+    "full_name": "Full Name",
+    "email": "Email",
+    "city": "City",
+    "location": "Location",
+    "save": "Save",
+    "assigned_regions": "Assigned Teaching Regions",
+    "add_region": "Add region",
+    "add": "Add",
+    "subjects_courses": "Subjects/Courses",
+    "duration": "Duration",
+    "weeks": "weeks",
+    "delete": "Delete",
+    "add_subject_course": "Add subject/course",
+    "duration_weeks": "Duration (weeks)",
+    "set_available_hours": "Set Available Teaching Hours",
+    "add_slot": "Add Slot",
+    "free_slots": "Free slots (auto-blocked)",
+    "none": "None",
+    "save_availability": "Save Availability",
+    "my_confirmed_bookings": "My Confirmed Bookings",
+    "date": "Date",
+    "time": "Time",
+    "course": "Course",
+    "action": "Action",
+    "no_confirmed_bookings": "No confirmed bookings.",
+    "pending_bookings": "Pending Bookings (First to Accept Wins)",
+    "accept": "Accept",
+    "no_pending_bookings": "No pending bookings.",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
+  },
+  "buycourses": {
+    "course_image_alt": "Course image",
+    "featured": "Featured",
+    "title": "Net Zero Carbon Strategy for Business",
+    "description": "A comprehensive course on decarbonisation, carbon accounting, carbon reduction, and sustainability for businesses. Taught by industry experts. Includes video lectures, downloadable resources, and a certificate.",
+    "price": "Price: ${{price}} per person",
+    "premium_discount": "20% off for Premium!",
+    "min_people": "Minimum 8 people per booking.",
+    "booking_confirmed": "Booking Confirmed!",
+    "instructor": "Instructor",
+    "payment_thank_you": "Thank you for your payment! A confirmation email has been sent.",
+    "book_another": "Book Another Course",
+    "membership_required": "You must have a Pro or Premium membership to buy this course.",
+    "see_membership": "See Membership Plans",
+    "step1": "Select number of people (min 8)",
+    "step2": "Pick a date",
+    "step3": "Check availability",
+    "step4": "Proceed to checkout and payment",
+    "people_label": "Number of people (min 8):",
+    "city_label": "Location (City):",
+    "area_label": "Area/Location (e.g., Model Town):",
+    "date_label": "Pick a date:",
+    "start_time_label": "Preferred Start Time:",
+    "end_time_label": "Preferred End Time:",
+    "select_course_label": "Select Course:",
+    "select_course_option": "Select a course",
+    "duration": "Duration",
+    "processing_payment": "Processing Payment...",
+    "pay_now": "Pay Now (${{price}})",
+    "booking": "Booking...",
+    "book_now": "Book Now (${{price}})",
+    "waiting_confirmation": "Waiting for instructor confirmation...",
+    "message": "{{message}}",
+    "error": "{{error}}"
+  },
+  "logout": "Logout",
+  "directory": {
+    "desktop_only": "Desktop Only",
+    "desktop_message": "For the best experience, please access the directory page on a desktop or laptop computer. Mobile support is coming soon!"
+  }
+
+}
+
+

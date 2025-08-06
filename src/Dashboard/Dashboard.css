@@ -1,0 +1,198 @@
+#dashf{
+
+    background-color: #90be55;
+}
+
+#dh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 120px;
+    font-weight: 400;
+}
+
+
+#dashf input{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#dashf button{
+    padding: 10px;
+    background-color: black;
+    padding-left: 20px;
+}
+
+#formerd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#formerd button{
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+/* Multi-language form styling */
+#formerd h3 {
+  margin: 20px 0 10px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #90be55;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#formerd input[type="text"],
+#formerd textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+#formerd input[type="text"]:focus,
+#formerd textarea:focus {
+  outline: none;
+  border-color: #90be55;
+  box-shadow: 0 0 5px rgba(144, 190, 85, 0.3);
+}
+
+#formerd textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Language field grouping */
+.language-group {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #90be55;
+}
+
+.language-group h3 {
+  margin-top: 0;
+  color: #90be55;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #formerd input[type="text"],
+  #formerd textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    max-width: 300px;
+  }
+}
+
+#dh{
+    padding-top: 300px;
+}
+
+#ttqa{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#inputerqad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#pppu{
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 600px;
+    padding: 30px;
+    border-radius: 30px;
+margin-bottom: 30px;
+
+}
+
+#pppu button{
+    color: white;
+    background-color: red;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+#pppu a {
+    color: white;
+    text-decoration: none;
+    background-color: #90be55;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#pppu a:hover {
+    background-color: #7da94a;
+}
+
+#cced{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-top: 50px;
+}
+
+
+@media screen and (max-width: 423px) {
+
+    #dashf input{
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    #formerd input[type="text"],
+    #formerd textarea {
+        max-width: 280px;
+    }
+
+}
+
+
+#color{
+    background-color: #90be55;
+}
+
+#inputerc{
+    background-color:#90be55;
+    margin: auto;
+}
+
+
+#inputerci{
+    background-color:#90be55;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+#inputerc textarea{
+width: 400px;
+}

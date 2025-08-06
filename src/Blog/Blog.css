@@ -1,0 +1,64 @@
+#ttq{
+    height: 190px;
+    background-color: black;
+}
+#bloger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 20px;
+}
+#totalr3{
+    background-color: #90be55;
+    height: 100vh;
+}
+#uut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    #totalr3{
+        background-color: #90be55;
+        height: 1120px;
+    }
+    #uut{
+margin-bottom: 40px;
+
+    }
+ 
+}
+
+#texw{
+    color: black;
+}
+
+
+@media screen and (max-width: 784px) {
+
+    #ttq{
+
+        background-color: black;
+        height: 140px;
+    }
+  }
+  
+  @media screen and (max-width: 662px) {
+
+    #ttq{
+
+        background-color: black;
+        height: 120px;
+    }
+  
+  }

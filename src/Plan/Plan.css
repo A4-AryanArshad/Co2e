@@ -1,0 +1,626 @@
+#hederArea{
+    background-color:black;
+    height: 190px; /* test with a fixed height */
+ 
+
+}
+#uuq{
+    background-color: transparent
+}
+
+#cover {
+    background-color: transparent !important;
+}
+
+#Cards{
+    padding: 50px;
+border: 1px solid black;
+width: 400px;
+color: black;
+border-radius: 20px;
+margin: 40px;
+}
+
+#Cards button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #90be55;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+margin-top: 20px;
+}
+#Cards1{
+    padding: 70px;
+border: 1px solid black;
+width: 400px;
+color: black;
+border-radius: 20px;
+margin: 40px;
+}
+
+#Cards3{
+    padding: 60px;
+border: 1px solid black;
+width: 400px;
+color: black;
+border-radius: 20px;
+margin: 40px;
+}
+
+#Cards3 button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #90be55;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+margin-top: 20px;
+}
+#Cards1 button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #90be55;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+margin-top: 20px;
+}
+#totalCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inCard {
+    width: 100%;
+}
+#Listing {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Remove all modern/plan-card styles */
+.plan-card, .plan-banner, .plan-title, .plan-price, .plan-features, .feature-yes, .feature-no, .plan-btn, .subfeature, .modern-card, .modern-badge, .modern-icon, .modern-content, .modern-title, .modern-accent, .modern-desc, .modern-btn, .btn-personal, .btn-business, .btn-enterprise { display: none !important; }
+
+#innerheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding-top: 40px;
+
+}
+
+#totalCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#innerheading h1{
+   font-weight: 400;
+
+}
+
+#Perks{
+    color: black;
+    margin-left: 230px;
+    background: transparent;
+}
+
+#Perks h1{
+    font-weight: 500;
+    background: transparent;
+}
+
+#iio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imager{
+    height: 290px;
+    margin-left: 290px;
+}
+#Blockchain p{
+    width: 600px;
+}
+
+#Blockchain{
+    color: black;
+}
+
+#Blockchain h1{
+    font-weight: 400;
+}
+
+#yyy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imager2{
+    height: 290px;
+   margin-right: 70px;
+}
+
+#Blockchain2 p{
+    width: 600px;
+}
+
+#Blockchain2{
+    color: black;
+    margin-left: 300px;
+}
+
+#Blockchain2 h1{
+    font-weight: 400;
+}
+
+
+
+#Blockchain3 p{
+    width: 600px;
+}
+
+#Blockchain3{
+    color: black;
+padding-right: 130px;
+}
+
+#Blockchain3 h1{
+    font-weight: 400;
+    width: 800px;
+}
+
+#Laster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lasterimg{
+    margin-right: 100px;
+    height: 300px;
+}
+#Perks{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+
+@media screen and (max-width: 1359px) {
+    #totalCards{
+        flex-direction: column;
+    }
+    #iio{
+        flex-direction: column;
+    }
+    #Blockchain{
+        text-align: center;
+        padding-top: 20px;
+    }
+    #imager{
+        display: none;
+    }
+    #imager2{
+        display: none;
+    }
+    #Blockchain2{
+        text-align: center;
+        padding-top: 20px;
+        margin: 0;
+    }
+    #Blockchain3{
+        text-align: center;
+        padding-top: 20px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    #yyy{
+        flex-direction: column;
+    }
+    #Laster{
+        flex-direction: column;
+    }
+    #lasterimg{
+        display: none;
+    }
+  #Blockchain3 p{
+    text-align: center;
+    margin-left: 100px;
+  }
+    
+  
+}
+
+
+@media screen and (max-width: 796px) {
+    #Blockchain3 h1{
+width: 500px;
+margin: auto;
+    }
+    #Blockchain3 p{
+        margin: auto;
+    }
+    #Blockchain3 {
+        padding: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 616px) {
+   #Blockchain p{
+width: 400px;
+margin: auto;
+   }
+   #Blockchain2 p{
+    width: 400px;
+    margin: auto;
+       }
+       #Blockchain3 p{
+        width: 400px;
+        margin: auto;
+           }
+           #Perks p{
+            width: 400px;
+            margin: auto;
+           }
+           #Blockchain h1{
+            width: 300px;
+            margin: auto;
+           }
+           #Perks h1{
+            width: 300px;
+            margin: auto;
+           }
+           #Blockchain2 h1{
+            width: 300px;
+            margin: auto;
+           }
+           #Blockchain3 h1{
+            width: 300px;
+            margin: auto;
+           }
+
+
+           
+}
+
+
+@media screen and (max-width: 499px) {
+    #Blockchain p{
+        width: 300px;
+        margin: auto;
+           }
+           #Blockchain2 p{
+            width: 200px;
+            margin: auto;
+               }
+               #Blockchain3 p{
+                width: 200px;
+                margin: auto;
+                   }
+                   #Perks p{
+                    width: 200px;
+                    margin: auto;
+                   }
+                   #Blockchain h1{
+                    width: 300px;
+                    margin: auto;
+                   }
+                   #Perks h1{
+                    width: 300px;
+                    margin: auto;
+                   }
+                   #Blockchain2 h1{
+                    width: 300px;
+                    margin: auto;
+                   }
+                   #Blockchain3 h1{
+                    width: 200px;
+                    margin: auto;
+                   }
+        
+}
+
+@media screen and (max-width: 431px) {
+
+
+#inCard{
+    padding: 0;
+}
+#Cards1{
+   width: 300px;
+}
+#Cards{
+    width: 300px;
+}
+#Cards3{
+    width: 300px;
+ }
+}
+
+
+
+
+@media screen and (max-width: 784px) {
+
+   
+
+    #hederArea{
+        background-color:black;
+        height: 140px; /* test with a fixed height */
+     
+    
+    }
+  }
+  
+  @media screen and (max-width: 662px) {
+
+   
+
+    #hederArea{
+        background-color:black;
+        height: 120px; /* test with a fixed height */
+     
+    
+    }
+  
+  }
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(144, 190, 85, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(144, 190, 85, 0.6);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+/* Enhanced card animations */
+#Cards1, #Cards, #Cards3 {
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+#Cards1:hover, #Cards:hover, #Cards3:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Button animations */
+#Cards1 button, #Cards button, #Cards3 button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#Cards1 button:hover, #Cards button:hover, #Cards3 button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(144, 190, 85, 0.4);
+}
+
+#Cards1 button:active, #Cards button:active, #Cards3 button:active {
+    transform: scale(0.95);
+}
+
+/* Shimmer effect for buttons */
+#Cards1 button::before, #Cards button::before, #Cards3 button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+#Cards1 button:hover::before, #Cards button:hover::before, #Cards3 button:hover::before {
+    left: 100%;
+}
+
+/* Current package badge animation */
+#Cards1 > div, #Cards > div, #Cards3 > div {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Perks section animation */
+#Perks {
+    animation: fadeInUp 1s ease-out;
+}
+
+#Perks h1 {
+    animation: glow 4s ease-in-out infinite;
+}
+
+/* Image animations */
+#imager, #imager2, #lasterimg {
+    transition: all 0.3s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+#imager:hover, #imager2:hover, #lasterimg:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.1);
+}
+
+/* Blockchain sections animations */
+#Blockchain, #Blockchain2, #Blockchain3 {
+    transition: all 0.3s ease;
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+#Blockchain:hover, #Blockchain2:hover, #Blockchain3:hover {
+    transform: translateX(10px);
+}
+
+/* Continuous floating animation for cards */
+#Cards1 {
+    animation: float 6s ease-in-out infinite;
+}
+
+#Cards {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+#Cards3 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+/* Pulse animation for current package */
+#Cards1[style*="border: 3px solid #90be55"],
+#Cards[style*="border: 3px solid #90be55"],
+#Cards3[style*="border: 3px solid #90be55"] {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+/* Enhanced hover effects for sections */
+#iio:hover, #yyy:hover, #Laster:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+
+/* Responsive animations */
+@media (max-width: 768px) {
+    #Cards1, #Cards, #Cards3 {
+        animation: fadeInUp 0.6s ease-out;
+    }
+    
+    #imager, #imager2, #lasterimg {
+        animation: float 4s ease-in-out infinite;
+    }
+}
+
+
+
+@media screen and (max-width: 1335px) {
+
+
+#innerPlan{
+    margin-top: 60px;
+    text-align: center;
+}
+#Laster{
+    margin: 70px;
+    padding: 0;
+}
+#yyy{
+    margin: 70px;
+}
+#iio{
+    margin: 70px;
+}
+#Blockchain3{
+
+margin-left: 110px;
+}
+#Perks{
+    margin: 70px;
+}
+}
+
+
+@media screen and (max-width: 402px) {
+
+#Perks{
+    display: none !important;
+}
+
+}
+

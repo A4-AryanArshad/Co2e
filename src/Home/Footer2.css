@@ -1,0 +1,58 @@
+#Footer2{
+    background-color: black;
+color: white;
+
+}
+
+#Footer2 h1{
+    text-align: center;
+    font-weight: 300;
+
+}
+
+#f2b{
+    margin: 30px;
+}
+
+#Footer2 h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 17px;
+
+}
+
+
+#Footer2 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 17px;
+
+}
+
+#si{
+    font-size: 40px;
+margin: 4px;
+margin-top: 20px;
+cursor: pointer;
+}
+#sii{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #Footer2 h1{
+font-size: 20px;
+    }
+
+    #si{
+        font-size: 30px;
+
+    }
+}
+

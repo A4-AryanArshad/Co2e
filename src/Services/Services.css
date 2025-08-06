@@ -1,0 +1,1068 @@
+#Hederarea{
+    background-color: black;
+    height: 190px;
+}
+
+#totalr{
+    background-color: white;
+    color: black;
+}
+#Listingg{
+    padding-top: 80px;
+    padding-left: 220px;
+}
+#Listingg h1{
+    font-weight: 400;
+    font-size: 50px;
+}
+#Listingg p{
+    font-size: 20px;
+}
+#i1 img{
+height: 160px;
+border-radius: 20px;
+border: 1px solid black;
+margin: 10px;
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #i1l img{
+     
+        margin: 0;
+        padding: 0;
+        
+        }
+
+        #bannerr1{
+            margin: 0;
+  
+        }
+
+}
+
+#i1l img{
+    height: 160px;
+    width: 470px;
+    border-radius: 20px;border: 1px solid black;
+    margin: 10px;
+    
+    }
+    #bannerr1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+
+    }
+
+    #texterimager{
+        margin: 10px;
+        background-color: white;
+        width: 400px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        border-radius: 20px;
+        text-align: center;
+   
+    }
+    #texterimager h2{
+        font-weight: 400;
+    }
+    #innerdes{
+        width: 1300px;
+        text-align: center;
+    }
+    #des{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+#ubottomimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottomtexter{
+    width: 1300px;
+    text-align: center;
+}
+#ubottomtexter{
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+#bcard1{
+    background-color: black;
+    color: white;
+    width: 600px;
+    padding: 34px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+#bottomone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bcard11{
+    background-color: black;
+    color: white;
+    width: 600px;
+    padding: 38px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+@media screen and (max-width: 1330px) {
+#bannerr1{
+    flex-direction: column;
+}
+
+
+#texterimager{
+   width: 470px;
+}
+
+}
+
+@media screen and (max-width: 701px) {
+#Listingg{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#bottomone{
+    flex-direction: column;
+}
+
+#bcard11{
+    background-color: black;
+    color: white;
+    width: 300px;
+    padding: 38px;
+    border-radius: 20px;
+    margin: 40px;
+}
+#bcard1{
+    background-color: black;
+    color: white;
+    width: 300px;
+    padding: 34px;
+    border-radius: 20px;
+    margin: 40px;
+}
+}
+
+
+@media screen and (max-width: 477px) {
+
+    #texterimager{
+        width: 370px;
+     }
+     #i1 img{
+        width: 370px;
+   
+     }
+     #i1l img{
+        width: 370px;
+        margin: 0;
+        padding: 0;
+     }
+}
+@media screen and (max-width: 389px) {
+
+    #texterimager{
+        width: 270px;
+     }
+     #i1 img{
+        width: 270px;
+   
+     }
+     #i1l img{
+        width: 270px;
+        margin: 0;
+        padding: 0;
+     }
+}
+
+#cover{
+    background-color: #90be55;
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(144, 190, 85, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(144, 190, 85, 0.6);
+    }
+}
+
+/* Enhanced hover effects */
+#scard {
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+#scard:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#scard img {
+    transition: all 0.3s ease;
+}
+
+#scard:hover img {
+    transform: scale(1.05);
+}
+
+#bcard1, #bcard11 {
+    transition: all 0.3s ease;
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+#bcard1:hover, #bcard11:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+#fcourse {
+    transition: all 0.3s ease;
+    animation: scaleIn 0.6s ease-out;
+}
+
+#fcourse:hover {
+    transform: scale(1.05);
+    animation: glow 2s ease-in-out infinite;
+}
+
+#fcourse button {
+    transition: all 0.3s ease;
+}
+
+#fcourse:hover button {
+    transform: scale(1.1);
+}
+
+/* Alphabet filter animations */
+#parenta span {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#parenta span:hover {
+    transform: scale(1.2);
+    color: #90be55 !important;
+}
+
+/* Table row hover effects */
+#ttable table tbody tr {
+    transition: all 0.3s ease;
+}
+
+#ttable table tbody tr:hover {
+    background-color: rgba(144, 190, 85, 0.1) !important;
+    transform: scale(1.01);
+}
+
+
+
+/* Description text animation */
+#des {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Continuous floating animation for service cards */
+#scard {
+    animation: float 6s ease-in-out infinite;
+}
+
+#scard:nth-child(1) { animation-delay: 0s; }
+#scard:nth-child(2) { animation-delay: 1s; }
+#scard:nth-child(3) { animation-delay: 2s; }
+#scard:nth-child(4) { animation-delay: 3s; }
+
+/* Pulse animation for course button */
+#fcourse {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+
+
+@media screen and (max-width: 784px) {
+    #Hederarea{
+        background-color: black;
+        height: 140px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 662px) {
+    #Hederarea{
+        background-color: black;
+        height: 120px;
+    }
+  
+  }
+
+#fcourse{
+    display: flex;
+    align-items: center;
+    justify-content: center;margin-top: 60px;
+    background-color: #90be55;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+}
+#fcourse button{
+    color: white;
+}
+
+#ufcourse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 383px) {
+
+    #fcourse{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+#bottomimage{
+    border-radius: 0;
+}
+}
+
+#scard{
+    width: 300px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#scard img{
+width: 100%;
+}
+
+#scard h1{
+    font-size: 20px;
+}
+
+#innerh1s h1{
+    font-size: 15px;
+}
+
+#innerh1s{
+    padding-top: 20px;
+}
+
+#innerh1s p{
+    background-color: rgb(237, 230, 230);
+width: 90px;
+}
+
+#innerh1ss h1{
+    font-size: 15px;
+}
+
+#innerh1ss{
+    padding-top: 10px;
+}
+
+#totalscard{
+    display: flex;
+}
+#utotalscard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    #totalscard{
+
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+    }
+
+}
+
+#featured h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parenta{
+display: flex;
+
+}
+#iparent{
+    display: flex;
+    margin: 2px;
+}
+
+#ttable{
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+max-width: 1200px;
+}
+
+/* Center table on all screen sizes */
+.table-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Responsive Category Filter Styles */
+.category-filter-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-scroll-wrapper {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #90be55 #f0f0f0;
+}
+
+.category-scroll-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.category-scroll-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 3px;
+}
+
+.category-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #90be55;
+    border-radius: 3px;
+}
+
+.category-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #7a9f4a;
+}
+
+.category-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    min-width: max-content;
+}
+
+.category-list span {
+    transition: all 0.2s ease;
+}
+
+.category-list span:hover {
+    transform: translateY(-1px);
+}
+
+/* Mobile Responsive Category Styles */
+@media screen and (max-width: 768px) {
+    .category-filter-container {
+        padding: 0 15px;
+    }
+    
+    .category-list {
+        gap: 6px;
+        padding: 6px 0;
+    }
+    
+    .category-list span {
+        padding: 3px 6px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category-filter-container {
+        padding: 0 10px;
+    }
+    
+    .category-list {
+        gap: 4px;
+        padding: 4px 0;
+    }
+    
+    .category-list span {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .category-filter-container {
+        padding: 0 5px;
+    }
+    
+    .category-list {
+        gap: 3px;
+        padding: 3px 0;
+    }
+    
+    .category-list span {
+        padding: 1px 3px !important;
+        font-size: 11px !important;
+    }
+}
+#tb{
+    margin-left:90px !important;
+}
+
+/* Responsive Table Styles */
+.table-responsive-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table-wrapper {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #90be55 #f0f0f0;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #90be55;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #7a9f4a;
+}
+
+.responsive-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+.responsive-table th {
+    background-color: #f7f7f7;
+    font-weight: 700;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.responsive-table tbody tr:hover {
+    background-color: rgba(144, 190, 85, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .table-responsive-container {
+        margin: 0 10px;
+        border-radius: 12px;
+    }
+    
+    .responsive-table {
+        min-width: 600px;
+        font-size: 14px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 10px 12px;
+    }
+    
+    #ttable {
+        margin: 0;
+        padding: 0 10px;
+    }
+    
+    #tb {
+        margin-left: 0 !important;
+        padding: 6px 10px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table-responsive-container {
+        margin: 0 5px;
+        border-radius: 8px;
+    }
+    
+    .responsive-table {
+        min-width: 500px;
+        font-size: 12px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 8px 10px;
+    }
+    
+    #ttable {
+        margin: 0;
+        padding: 0 5px;
+    }
+    
+    #tb {
+        padding: 4px 8px !important;
+        font-size: 12px !important;
+        border-width: 1px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .responsive-table {
+        min-width: 450px;
+        font-size: 11px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 6px 8px;
+    }
+}
+
+/* Ensure table doesn't break layout on very small screens */
+@media screen and (max-width: 320px) {
+    .table-responsive-container {
+        margin: 0 2px;
+    }
+    
+    .responsive-table {
+        min-width: 400px;
+        font-size: 10px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 4px 6px;
+    }
+}
+
+/* Fix for the existing responsive styles */
+@media screen and (max-width: 1328px) {
+    #ttable {
+        margin: 0 20px;
+        overflow-x: visible;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    #ttable {
+        margin: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 694px) {
+
+#barea1{
+margin: 0 !important;
+}
+#Listingg{
+    margin-top: 200px !important;
+}
+}
+
+
+
+@media screen and (max-width: 1085px) {
+#ppa{
+
+width: 300px;
+}
+
+#uppa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+}
+
+@media screen and (max-width: 680px) {
+    #ppa{
+    
+    width: 300px;
+    }
+    
+    #uppa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+    }
+
+
+
+    @media screen and (max-width: 1111px) {
+        #ppaa{
+        
+            width: 300px;
+            overflow-x: auto;
+        }
+        
+        #uppaa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+        }
+        
+        }
+    
+
+
+    @media screen and (max-width: 1328px) {
+        #ttable{
+margin-right: 140px;
+overflow-x: auto !important;
+        }
+
+    }
+
+    @media screen and (max-width: 642px) {
+        #ttable{
+margin: auto;
+        }
+
+    }
+
+/* Responsive Table Styles */
+.table-responsive-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table-wrapper {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #90be55 #f0f0f0;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #90be55;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #7a9f4a;
+}
+
+.responsive-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+.responsive-table th {
+    background-color: #f7f7f7;
+    font-weight: 700;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.responsive-table tbody tr:hover {
+    background-color: rgba(144, 190, 85, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .table-responsive-container {
+        margin: 0 10px;
+        border-radius: 12px;
+    }
+    
+    .responsive-table {
+        min-width: 600px;
+        font-size: 14px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 10px 12px;
+    }
+    
+    #ttable {
+        margin: 0;
+        padding: 0 10px;
+    }
+    
+    #tb {
+        margin-left: 0 !important;
+        padding: 6px 10px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table-responsive-container {
+        margin: 0 5px;
+        border-radius: 8px;
+    }
+    
+    .responsive-table {
+        min-width: 500px;
+        font-size: 12px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 8px 10px;
+    }
+    
+    #ttable {
+        margin: 0;
+        padding: 0 5px;
+    }
+    
+    #tb {
+        padding: 4px 8px !important;
+        font-size: 12px !important;
+        border-width: 1px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .responsive-table {
+        min-width: 450px;
+        font-size: 11px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 6px 8px;
+    }
+}
+
+/* Ensure table doesn't break layout on very small screens */
+@media screen and (max-width: 320px) {
+    .table-responsive-container {
+        margin: 0 2px;
+    }
+    
+    .responsive-table {
+        min-width: 400px;
+        font-size: 10px;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 4px 6px;
+    }
+}
+
+/* Fix for the existing responsive styles */
+@media screen and (max-width: 1328px) {
+    #ttable {
+        margin: 0 20px;
+        overflow-x: visible;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    #ttable {
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 1894px) {
+#ttable{
+margin-right: 300px !important;
+}
+
+
+}
+
+@media screen and (max-width: 1536px) {
+    #ttable{
+margin: 0 !important;
+margin-left: -10px !important;
+    }
+    
+    
+    }
+
+    @media screen and (max-width: 1469px) {
+        #ttable{
+    margin: 0 !important;
+    margin-left: -50px !important;
+        }
+        
+        
+        }
+
+        @media screen and (max-width: 1050px) {
+
+
+            #ttable{
+                margin: 0 !important;
+                margin-left: -90px !important;
+                    }
+                    
+                    
+                    }
+            
+                    @media screen and (max-width: 689px) {
+
+
+                        #ttable{
+                            margin: 0 !important;
+                            margin-left: -5px !important;
+                                }
+                                
+                                
+                                }
+                        
+                    

@@ -1,0 +1,54 @@
+/* Multi-language form styling */
+form h3 {
+  margin: 20px 0 10px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #90be55;
+  padding-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #90be55;
+  box-shadow: 0 0 5px rgba(144, 190, 85, 0.3);
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Language field grouping */
+.language-group {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #90be55;
+}
+
+.language-group h3 {
+  margin-top: 0;
+  color: #90be55;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  form input[type="text"],
+  form textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
