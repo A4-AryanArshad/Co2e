@@ -16,6 +16,8 @@ const DirectoryListing = () => {
   const { t } = useTranslation();
   const [user, setUser] = useState(null); // { package: 'free'|'pro'|'premium', ... }
   const [listings, setListings] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [apiError, setApiError] = useState(false);
   
   // Refs for animations
   const titleRef = useRef(null);
@@ -48,9 +50,11 @@ const DirectoryListing = () => {
     if (isIPhoneSafari() && iphoneMsgRef.current) {
       gsap.fromTo(iphoneMsgRef.current, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out' });
     }
-    if (isLoggedIn && !isIPhoneSafari()) {
+    // Always fetch listings regardless of login status
+    fetchListings();
+    // Only fetch user info if logged in
+    if (isLoggedIn) {
       fetchUser();
-      fetchListings();
     }
   }, [isLoggedIn]);
 
@@ -154,35 +158,79 @@ const DirectoryListing = () => {
 
   const fetchListings = async () => {
     try {
+      setIsLoading(true);
+      setApiError(false);
+      console.log('Starting fetchListings...');
+      console.log('API_BASE:', API_BASE);
+      console.log('isLoggedIn:', isLoggedIn);
+      
       let data;
       
       // For iPhone Safari, try the special endpoint first
       if (isIPhoneSafari()) {
+        console.log('iPhone Safari detected, trying special endpoint...');
         try {
           const response = await fetch(`${API_BASE}/api/directory/iphone-access`, {
             credentials: 'include',
             headers: getAuthHeaders(),
           });
           
+          console.log('iPhone endpoint response status:', response.status);
+          
           if (response.ok) {
             const result = await response.json();
             data = result.listings;
+            console.log('iPhone endpoint success, data:', data);
           } else {
-            throw new Error('iPhone endpoint failed');
+            throw new Error(`iPhone endpoint failed with status: ${response.status}`);
           }
         } catch (iphoneError) {
           console.log('iPhone endpoint failed, trying regular endpoint:', iphoneError);
-          data = await get(`${API_BASE}/api/directory`, 'Loading directory listings...');
+          // Try direct fetch without authentication for public access
+          const response = await fetch(`${API_BASE}/api/directory`);
+          console.log('Direct fetch response status:', response.status);
+          
+          if (response.ok) {
+            data = await response.json();
+            console.log('Direct fetch success, data:', data);
+          } else {
+            throw new Error(`Regular endpoint failed with status: ${response.status}`);
+          }
         }
       } else {
-        data = await get(`${API_BASE}/api/directory`, 'Loading directory listings...');
+        console.log('Regular browser, trying direct fetch...');
+        // Try direct fetch without authentication for public access
+        try {
+          const response = await fetch(`${API_BASE}/api/directory`);
+          console.log('Direct fetch response status:', response.status);
+          
+          if (response.ok) {
+            data = await response.json();
+            console.log('Direct fetch success, data:', data);
+          } else {
+            console.log('Direct fetch failed, trying useApi fallback...');
+            // Fallback to useApi if direct fetch fails
+            data = await get(`${API_BASE}/api/directory`, 'Loading directory listings...');
+          }
+        } catch (directError) {
+          console.log('Direct fetch failed, trying useApi:', directError);
+          data = await get(`${API_BASE}/api/directory`, 'Loading directory listings...');
+        }
       }
       
-      console.log('Fetched listings:', data); // Debug log
-      setListings(data);
+      console.log('Final fetched listings:', data); // Debug log
+      setListings(data || []);
     } catch (err) {
-      console.log('Listings fetch error:', err);
+      console.error('Listings fetch error:', err);
+      console.error('Error details:', {
+        message: err.message,
+        stack: err.stack,
+        API_BASE: API_BASE
+      });
       setListings([]);
+      setApiError(true);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -485,7 +533,30 @@ const DirectoryListing = () => {
                       </p>
                     </div>
                   )}
-                  {listings.length > 0 ? (
+                  {isLoading ? (
+                    <div style={{ marginTop: 40, textAlign: 'center' }}>
+                      <div style={{ padding: '40px', color: '#666', fontSize: '18px' }}>
+                        Loading directory listings...
+                      </div>
+                    </div>
+                  ) : apiError ? (
+                    <div style={{ marginTop: 40, textAlign: 'center' }}>
+                      <div style={{ 
+                        padding: '40px', 
+                        color: '#e74c3c', 
+                        fontSize: '18px',
+                        background: '#fdf2f2',
+                        borderRadius: '10px',
+                        border: '1px solid #fecaca'
+                      }}>
+                        Unable to load directory listings. Please check your connection and try again.
+                        <br />
+                        <small style={{ color: '#666', marginTop: '10px', display: 'block' }}>
+                          API Base: {API_BASE}
+                        </small>
+                      </div>
+                    </div>
+                  ) : listings.length > 0 ? (
                     <div style={{ marginTop: 40 }}>
                       <h2 style={{ textAlign: 'center', marginBottom: 20, color: '#333' }}>Directory Listings</h2>
                       
