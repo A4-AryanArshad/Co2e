@@ -185,9 +185,28 @@ const Services = () => {
 
   const fetchFeaturedImages = async () => {
     try {
+      console.log('Services: Fetching featured listings from:', `${API_BASE}/api/featured-listings`);
+      
+      // Try direct fetch first
+      try {
+        const response = await fetch(`${API_BASE}/api/featured-listings`);
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Services: Featured listings fetched successfully via direct fetch:', data);
+          setFeaturedImages(data);
+          return;
+        }
+      } catch (directError) {
+        console.log('Services: Direct fetch failed for featured listings, trying useApi:', directError);
+      }
+      
+      // Fallback to useApi
       const data = await get(`${API_BASE}/api/featured-listings`, 'Loading featured listings...');
+      console.log('Services: Featured listings fetched successfully via useApi:', data);
       setFeaturedImages(data);
     } catch (err) {
+      console.error('Services: Failed to fetch featured listings:', err);
+      console.error('Services: API_BASE:', API_BASE);
       setFeaturedImages([]);
     }
   };
