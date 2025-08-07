@@ -194,18 +194,56 @@ const Services = () => {
 
   const fetchDirectoryListings = async () => {
     try {
+      console.log('Services: Fetching directory listings from:', `${API_BASE}/api/directory`);
+      
+      // Try direct fetch first
+      try {
+        const response = await fetch(`${API_BASE}/api/directory`);
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Services: Directory listings fetched successfully via direct fetch:', data);
+          setDirectoryListings(data);
+          return;
+        }
+      } catch (directError) {
+        console.log('Services: Direct fetch failed, trying useApi:', directError);
+      }
+      
+      // Fallback to useApi
       const data = await get(`${API_BASE}/api/directory`, 'Loading directory listings...');
+      console.log('Services: Directory listings fetched successfully via useApi:', data);
       setDirectoryListings(data);
     } catch (err) {
+      console.error('Services: Failed to fetch directory listings:', err);
+      console.error('Services: API_BASE:', API_BASE);
       setDirectoryListings([]);
     }
   };
 
   const fetchCategories = async () => {
     try {
+      console.log('Services: Fetching categories from:', `${API_BASE}/api/directory/categories`);
+      
+      // Try direct fetch first
+      try {
+        const response = await fetch(`${API_BASE}/api/directory/categories`);
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Services: Categories fetched successfully via direct fetch:', data);
+          setCategories(data);
+          return;
+        }
+      } catch (directError) {
+        console.log('Services: Direct fetch failed, trying useApi:', directError);
+      }
+      
+      // Fallback to useApi
       const data = await get(`${API_BASE}/api/directory/categories`, 'Loading categories...');
+      console.log('Services: Categories fetched successfully via useApi:', data);
       setCategories(data);
     } catch (err) {
+      console.error('Services: Failed to fetch categories:', err);
+      console.error('Services: API_BASE:', API_BASE);
       setCategories([]);
     }
   };
