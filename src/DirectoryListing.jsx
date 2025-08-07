@@ -178,6 +178,7 @@ const DirectoryListing = () => {
         data = await get(`${API_BASE}/api/directory`, 'Loading directory listings...');
       }
       
+      console.log('Fetched listings:', data); // Debug log
       setListings(data);
     } catch (err) {
       console.log('Listings fetch error:', err);
@@ -273,9 +274,16 @@ const DirectoryListing = () => {
     }
   };
 
-  const filteredListings = listings.filter(listing => 
-    listing.company?.toUpperCase().startsWith(selectedLetter)
-  );
+  const filteredListings = listings.filter(listing => {
+    if (!listing.company) return false;
+    return listing.company.toUpperCase().startsWith(selectedLetter);
+  });
+
+  // Debug log for filtered listings
+  console.log('Selected letter:', selectedLetter);
+  console.log('Total listings:', listings.length);
+  console.log('Filtered listings:', filteredListings.length);
+  console.log('Filtered listings data:', filteredListings);
 
   const getRowStyle = (userPackage) => {
     if (userPackage === 'free') return {};
@@ -477,24 +485,54 @@ const DirectoryListing = () => {
                       </p>
                     </div>
                   )}
-                  {listings.length > 0 && (
+                  {listings.length > 0 ? (
                     <div style={{ marginTop: 40 }}>
                       <h2 style={{ textAlign: 'center', marginBottom: 20, color: '#333' }}>Directory Listings</h2>
-                      <div style={{ display: 'grid', gap: 15 }}>
-                        {filteredListings.map((listing, index) => (
-                          <div key={index} style={{ ...getRowStyle(listing.userPackage), padding: '15px', border: '1px solid #eee', borderRadius: 8, background: '#f9f9f9' }}>
-                            <p style={{ margin: 0, fontWeight: 'bold' }}>{listing.company}</p>
-                            <p style={{ margin: 0, color: '#555' }}>{listing.email}</p>
-                            <p style={{ margin: 0, color: '#555' }}>{listing.phone}</p>
-                            <p style={{ margin: 0, color: '#555' }}>{listing.address}</p>
-                            <p style={{ margin: 0, color: '#555' }}>{listing.socialType && listing.socialLink ? `${listing.socialType}: ${listing.socialLink}` : ''}</p>
-                            <p style={{ margin: 0, color: '#555' }}>{listing.industry}</p>
-                            <p style={{ margin: 0, color: '#555' }}>{listing.description}</p>
-                            {listing.image && (
-                              <img src={listing.image} alt="Company Logo" style={{ maxWidth: '100px', height: 'auto', marginTop: 10 }} />
-                            )}
-                          </div>
+                      
+                      {/* Alphabet Navigation */}
+                      <div className="alphabet-nav">
+                        {Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ').map((letter) => (
+                          <button
+                            key={letter}
+                            onClick={() => setSelectedLetter(letter)}
+                            className={selectedLetter === letter ? 'active' : ''}
+                          >
+                            {letter}
+                          </button>
                         ))}
+                      </div>
+
+                      {/* Show message when no listings for selected letter */}
+                      {filteredListings.length === 0 && (
+                        <div className="no-listings-message">
+                          No companies in the directory starting with "{selectedLetter}" yet.
+                        </div>
+                      )}
+
+                      {/* Listings Grid */}
+                      {filteredListings.length > 0 && (
+                        <div style={{ display: 'grid', gap: 15 }}>
+                          {filteredListings.map((listing, index) => (
+                            <div key={index} style={{ ...getRowStyle(listing.package), padding: '15px', border: '1px solid #eee', borderRadius: 8, background: '#f9f9f9' }}>
+                              <p style={{ margin: 0, fontWeight: 'bold' }}>{listing.company}</p>
+                              <p style={{ margin: 0, color: '#555' }}>{listing.email}</p>
+                              <p style={{ margin: 0, color: '#555' }}>{listing.phone}</p>
+                              <p style={{ margin: 0, color: '#555' }}>{listing.address}</p>
+                              <p style={{ margin: 0, color: '#555' }}>{listing.socialType && listing.socialLink ? `${listing.socialType}: ${listing.socialLink}` : ''}</p>
+                              <p style={{ margin: 0, color: '#555' }}>{listing.industry}</p>
+                              <p style={{ margin: 0, color: '#555' }}>{listing.description}</p>
+                              {listing.image && (
+                                <img src={listing.image} alt="Company Logo" style={{ maxWidth: '100px', height: 'auto', marginTop: 10 }} />
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div style={{ marginTop: 40 }}>
+                      <div className="no-listings-message">
+                        No companies in the directory yet.
                       </div>
                     </div>
                   )}

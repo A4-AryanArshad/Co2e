@@ -621,6 +621,18 @@ margin-left: 110px;
 #Perks{
     display: none !important;
 }
-
+#laster{
+    margin: 0;
 }
+}
+
+@media screen and (max-width: 450px) {
+
+ 
+    #laster{
+        margin: 0;
+    }
+    }
+    
+    
 

@@ -194,7 +194,7 @@ const Header = () => {
                 </span>
                 <ul className="dropdown-menu">
                   <li><span id="hos" onClick={() => { setNavOpen(false); window.location.href = '/news'; }} style={{ cursor: 'pointer' }}>{t("navbar.submenu.news")}</span></li>
-                  <li><span id="hos" onClick={() => { setNavOpen(false); window.location.href = '/blogs'; }} style={{ cursor: 'pointer' }}>{t("navbar.submenu.blog")}</span></li>
+                  <li><span id="hos" onClick={() => { setNavOpen(false); window.location.href = '/news'; }} style={{ cursor: 'pointer' }}>{t("navbar.submenu.blog")}</span></li>
                 </ul>
               </li>
 
