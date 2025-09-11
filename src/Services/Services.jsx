@@ -682,7 +682,8 @@ const Services = () => {
                 alignItems: 'center',
                 width: '100%',
                 padding: '0 20px',
-                marginTop: '10px', position: 'relative', top: selectedCategory === 'Broker' ? '-900px' : '0px'
+                marginTop: '10px', position: 'relative', top: selectedCategory === 'Broker' ? '-900px' : '0px',
+                marginBottom: selectedCategory === 'Broker' ? '-7000px' : '0px'
               }}>
               {filteredListings.length > 0 ? (
                 <div className="table-responsive-container" style={{ 
@@ -995,7 +996,7 @@ const Services = () => {
                   fontSize: 'clamp(28px, 4vw, 36px)',
                   fontWeight: '700',
                   color: '#333',
-                  marginBottom: '40px',
+                  marginBottom: '10px',
                   textTransform: 'uppercase',
                   letterSpacing: '1px'
                 }}>
