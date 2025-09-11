@@ -682,8 +682,12 @@ const Services = () => {
                 alignItems: 'center',
                 width: '100%',
                 padding: '0 20px',
-                marginTop: '10px', position: 'relative', top: selectedCategory === 'Broker' ? '-900px' : '0px',
-                marginBottom: selectedCategory === 'Broker' ? '-7000px' : '0px'
+                marginTop: '10px', position: 'relative', top: selectedCategory === 'Broker'
+                ? window.innerWidth <= 500
+                  ? '-700px'
+                  : '-900px'
+                : '0px',
+                marginBottom: selectedCategory === 'Broker' ? '-1800px' : '0px'
               }}>
               {filteredListings.length > 0 ? (
                 <div className="table-responsive-container" style={{ 
