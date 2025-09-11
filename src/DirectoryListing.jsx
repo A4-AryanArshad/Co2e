@@ -478,7 +478,7 @@ const DirectoryListing = () => {
   return (
     <>
       <Header />
-      <div style={{ margin:'120px',background: '#fff', minHeight: '100vh', padding: '180px 0 60px 0' }}>
+      <div style={{ margin:'20px',background: '#fff', minHeight: '100vh', padding: '20px 0 60px 0' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 20px' }}>
           <h1 ref={titleRef} style={{ textAlign: 'center', marginBottom: 40, color: '#333' }}>{t('directory.page_title')}</h1>
           {isIPhoneSafari() ? (

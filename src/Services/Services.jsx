@@ -478,7 +478,7 @@ const Services = () => {
 
           <div id="directory-listing" style={{ maxWidth: '100%', overflow: 'hidden' }}>
             <div id="Listingg" style={{ 
-              paddingTop: '60px',
+              paddingTop: '20px',
               paddingLeft: 'clamp(20px, 5vw, 220px)',
               paddingRight: 'clamp(20px, 5vw, 220px)',
               textAlign: 'center'
@@ -487,7 +487,7 @@ const Services = () => {
                 position: 'relative',
                 fontSize: 'clamp(32px, 8vw, 50px)',
                 lineHeight: '1.2',
-                marginBottom: '15px'
+                marginBottom: '15px', marginTop: '100px'
               }}>
                 {/* Anchor div for navbar navigation - ensures heading appears from start */}
                 <div id="directory-listing-anchor" style={{ position: 'absolute', top: '-100px', visibility: 'hidden', height: '0', width: '0' }}></div>
@@ -560,7 +560,7 @@ const Services = () => {
               {/* Category Filter Row - Only show when in category mode - MOVED HERE */}
               {viewMode === 'category' && (
                 <div  className="category-filter-container" style={{ 
-                  margin: '10px auto 20px auto', 
+                  margin: '10px auto 10px auto', 
                   width: '100%', 
                   maxWidth: '1200px',
                   padding: '0 20px',
@@ -676,13 +676,13 @@ const Services = () => {
   
 
 
-              <div id="ttable" ref={tableRef} style={{ 
+              <div id="kjk1" ref={tableRef} style={{ 
                 display: 'flex', 
                 justifyContent: 'center', 
                 alignItems: 'center',
                 width: '100%',
                 padding: '0 20px',
-                marginTop: '-10px'
+                marginTop: '10px', position: 'relative', top: selectedCategory === 'Broker' ? '-900px' : '0px'
               }}>
               {filteredListings.length > 0 ? (
                 <div className="table-responsive-container" style={{ 
@@ -782,7 +782,7 @@ const Services = () => {
 
                         {filteredListings.length === 0 && (
                           <tr>
-                            <td colSpan={6} style={{ textAlign: 'center', color: '#888', padding: 24 }}>
+                            <td colSpan={6} style={{ textAlign: 'center', color: '#888' }}>
                               {viewMode === 'category' 
                                 ? (selectedCategory ? `No listings for category "${selectedCategory}".` : 'No listings in the directory yet.')
                                 : `No listings for letter "${selectedLetter}".`

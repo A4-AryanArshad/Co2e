@@ -9,7 +9,7 @@
 }
 
 #Listingg{
-    padding-top: 80px;
+    padding-top: 20px;
     padding-left: 220px;
 }
 
@@ -125,7 +125,7 @@
     #Listingg {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 40px;
+        padding-top: 20px;
         text-align: center;
     }
     
@@ -210,7 +210,7 @@
     #Listingg {
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 30px;
+        padding-top: 20px;
     }
     
     #Listingg h1 {
@@ -280,7 +280,7 @@
     #Listingg {
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 25px;
+        padding-top: 20px;
     }
     
     #Listingg h1 {
@@ -733,7 +733,7 @@ justify-content: center;
     margin: 0;
     padding: 0;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 #bottomone{
@@ -960,17 +960,17 @@ justify-content: center;
 
 @media screen and (max-width: 784px) {
     #Hederarea{
-        background-color: black;
-        height: 140px;
-    }
+    background-color: black;
+    height: 190px;
+}
     
   }
   
   @media screen and (max-width: 662px) {
     #Hederarea{
-        background-color: black;
-        height: 120px;
-    }
+    background-color: black;
+    height: 190px;
+}
   
   }
 
@@ -2328,4 +2328,8 @@ justify-content: center !important;
   .table-wrapper::-webkit-scrollbar {
     height: 6px !important;
   }
+}
+#kjk1{
+position: relative;
+top: 1000px;
 }

@@ -276,6 +276,9 @@ const DirectoryListing = () => {
       return;
     }
 
+    if (!form.city || !form.state || !form.country) {
+      setError('Please fill in all required location fields: City, State, and Country');
+      return;
     }
 
     // Validate social platform fields
@@ -293,8 +296,10 @@ const DirectoryListing = () => {
     if (!user) {
       setError(t('directory.errors.login_required'));
       return;
-
     }
+
+    // Free and Pro users can submit listings; only Premium can upload images
+    // No package gate here
 
     // Validate Local Contractors specific fields
     if (form.industry === 'Local Contractors') {
@@ -600,7 +605,7 @@ const DirectoryListing = () => {
                   {error && <div ref={errorRef} style={{ color: 'red', textAlign: 'center', marginBottom: 20 }}>{error}</div>}
                   {success && <div ref={successRef} style={{ color: 'green', textAlign: 'center', marginBottom: 20 }}>{success}</div>}
 
-                  {user && user.package !== 'free' ? (
+                  {user ? (
                     <div ref={formRef} style={{ background: '#f9f9f9', padding: 30, borderRadius: 10, marginBottom: 40 }}>
                       <h2 style={{ marginBottom: 20, color: '#333' }}>{t('directory.form.submit_your_company')}</h2>
                       <form onSubmit={handleSubmit} style={{ display: 'grid', gap: 15 }}>
@@ -836,7 +841,7 @@ const DirectoryListing = () => {
                   ) : (
                     <div style={{ textAlign: 'center', marginBottom: 40 }}>
                       <p style={{ color: '#666', fontSize: 18 }}>
-                        {!user ? t('directory.messages.login_required_message') : t('directory.messages.premium_required_message')}
+                        {!user ? t('directory.messages.login_required_message') : ''}
                       </p>
                     </div>
                   )}
